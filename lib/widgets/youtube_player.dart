@@ -13,7 +13,7 @@ class YoutubePlayer extends StatefulWidget {
 
 class _YoutubePlayerState extends State<YoutubePlayer> {
   YoutubePlayerController _controller;
-
+  bool isReady = false;
 
   @override
   void initState() {
@@ -25,12 +25,15 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
           autoPlay: false
       ),
     );
+//    _controller.listen((event) {
+//      print('准备好了吗:${event.isReady}');
+//    });
+
     super.initState();
   }
 
   @override
   void dispose() {
-    _controller.listen((event) { })
     _controller.close();
     _controller = null;
     super.dispose();

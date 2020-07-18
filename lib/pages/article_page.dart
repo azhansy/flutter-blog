@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../widgets/youtube_player.dart';
 import '../widgets/toast_widget.dart';
 import '../config/url_launcher.dart';
 import '../widgets/toc_item.dart';
@@ -263,9 +264,15 @@ class _ArticlePageState extends State<ArticlePage> {
       loadingWidget: Container(),
       styleConfig: StyleConfig(
           pConfig: PConfig(
-            onLinkTap: (url) => launchURL(url),
-            selectable: false
-          ),
+              onLinkTap: (url) => launchURL(url),
+              selectable: false,
+              custom: (element) {
+                if(element.tag == 'youtube'){
+                  final youtubeId = element.attributes['id'];
+                  return YoutubePlayer(youtubeId: youtubeId);
+                }
+                return Container();
+              }),
           titleConfig: TitleConfig(
             showDivider: false,
             commonStyle: TextStyle(color: Theme.of(context).textSelectionColor),
@@ -289,49 +296,55 @@ class _ArticlePageState extends State<ArticlePage> {
               ),
             );
           },
-          preConfig: PreConfig(preWrapper: (child, text) {
-            return Stack(
-              children: <Widget>[
-                child,
-                Container(
-                  margin: EdgeInsets.only(top: 5, right: 5),
-                  alignment: Alignment.topRight,
-                  child: IconButton(
-                    onPressed: () {
-                      Clipboard.setData(ClipboardData(text: text));
-                      Widget toastWidget = Align(
-                        alignment: Alignment.bottomCenter,
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 50),
-                          decoration: BoxDecoration(
-                            border:
-                                Border.all(color: Color(0xff006EDF), width: 2),
-                            borderRadius: BorderRadius.all(Radius.circular(
-                              4,
-                            )),
-                            color: Color(0xff007FFF)
-                          ),
-                          width: 100,
-                          height: 30,
-                          child: Center(
-                            child: Material(
-                              color: Colors.transparent,
-                              child: Text(
-                                '复制成功',
-                                style: TextStyle(fontSize: 10, color: Colors.white),
+          preConfig: PreConfig(
+            preWrapper: (child, text) {
+              return Stack(
+                children: <Widget>[
+                  child,
+                  Container(
+                    margin: EdgeInsets.only(top: 5, right: 5),
+                    alignment: Alignment.topRight,
+                    child: IconButton(
+                      onPressed: () {
+                        Clipboard.setData(ClipboardData(text: text));
+                        Widget toastWidget = Align(
+                          alignment: Alignment.bottomCenter,
+                          child: Container(
+                            margin: EdgeInsets.only(bottom: 50),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Color(0xff006EDF), width: 2),
+                                borderRadius: BorderRadius.all(Radius.circular(
+                                  4,
+                                )),
+                                color: Color(0xff007FFF)),
+                            width: 100,
+                            height: 30,
+                            child: Center(
+                              child: Material(
+                                color: Colors.transparent,
+                                child: Text(
+                                  '复制成功',
+                                  style: TextStyle(
+                                      fontSize: 10, color: Colors.white),
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      );
-                      ToastWidget().showToast(context, toastWidget, 1);
-                    },
-                    icon: Icon(Icons.content_copy, size: 10,),
-                  ),
-                )
-              ],
-            );
-          }, language: 'dart'),
+                        );
+                        ToastWidget().showToast(context, toastWidget, 1);
+                      },
+                      icon: Icon(
+                        Icons.content_copy,
+                        size: 10,
+                      ),
+                    ),
+                  )
+                ],
+              );
+            },
+            language: 'dart',
+          ),
           markdownTheme:
               isDark ? MarkdownTheme.darkTheme : MarkdownTheme.lightTheme),
     );

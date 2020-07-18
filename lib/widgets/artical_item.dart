@@ -3,13 +3,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import '../json/article_item_bean.dart';
-import '../widgets/hover_zoom_widget.dart';
 import '../config/platform_type.dart';
 
 class ArticleItem extends StatelessWidget {
   final ArticleItemBean bean;
+  final VoidCallback onPressed;
 
-  const ArticleItem({Key key, @required this.bean}) : super(key: key);
+  const ArticleItem({Key key, @required this.bean, this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,9 @@ class ArticleItem extends StatelessWidget {
 
     return Column(
       children: <Widget>[
-        HoverZoomWidget(
+        FlatButton(
+          onPressed: onPressed,
+          hoverColor: Colors.transparent,
           child: Container(
             margin: const EdgeInsets.all(10),
             width: cardWidth,
@@ -48,6 +50,8 @@ class ArticleItem extends StatelessWidget {
                   height: cardHeight,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+                    color: Colors
+                        .primaries[Random().nextInt(Colors.primaries.length)],
                     image: bean.imageAddress.isEmpty
                         ? null
                         : DecorationImage(
@@ -74,7 +78,6 @@ class ArticleItem extends StatelessWidget {
               ],
             ),
           ),
-          scale: isNotMobile ? 1.1 : 1.0,
         ),
         Container(
           width: isNotMobile ? 0.86 * cardWidth : 0.95 * cardWidth,

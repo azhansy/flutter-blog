@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_blog/widgets/hover_zoom_widget.dart';
 import '../config/url_launcher.dart';
 import '../json/link_item_bean.dart';
 
@@ -55,15 +56,18 @@ class FriendLinkItem extends StatelessWidget {
                                     bean.linkDescription.length, (index) {
                                   return Container(
                                     margin: const EdgeInsets.all(10),
-                                    child: Text(bean.linkDescription[index],
-                                        style: TextStyle(
-                                          fontFamily: 'huawen_kt',
-                                          fontSize: (Random().nextInt(10) + 15)
-                                              .toDouble(),
-                                          color: Colors.primaries[Random()
-                                              .nextInt(
-                                                  Colors.primaries.length)],
-                                        )),
+                                    child: HoverZoomWidget(
+                                      scale: 1.1,
+                                      child: Text(bean.linkDescription[index],
+                                          style: TextStyle(
+                                            fontFamily: 'huawen_kt',
+                                            fontSize: (Random().nextInt(10) + 15)
+                                                .toDouble(),
+                                            color: Colors.primaries[Random()
+                                                .nextInt(
+                                                    Colors.primaries.length)],
+                                          )),
+                                    ),
                                   );
                                 }),
                               )),
@@ -77,8 +81,9 @@ class FriendLinkItem extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.topCenter,
-            child: GestureDetector(
-              onTap: () => launchURL(bean.linkAvatar),
+            child: FlatButton(
+              onPressed: () => launchURL(bean.linkAvatar),
+              hoverColor: Colors.transparent,
               child: Container(
                 width: 100,
                 height: 100,

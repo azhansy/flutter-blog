@@ -78,16 +78,15 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(
                           0.02 * width, 0.02 * height, 0.02 * width, 0),
                       children: List.generate(showDataList.length, (index) {
-                        return GestureDetector(
-                          child: ArticleItem(bean: showDataList[index]),
-                          onTap: () {
-                            final name = showDataList[index].articleName;
-                            final result = Uri.encodeFull(name);
-                            Navigator.of(context).pushNamed(
-                                articlePage + '/$result',
-                                arguments: ArticleData(index, showDataList));
-                          },
-                        );
+                        return ArticleItem(
+                            bean: showDataList[index],
+                            onPressed: () {
+                              final name = showDataList[index].articleName;
+                              final result = Uri.encodeFull(name);
+                              Navigator.of(context).pushNamed(
+                                  articlePage + '/$result',
+                                  arguments: ArticleData(index, showDataList));
+                            });
                       }),
                     )),
           ),
@@ -95,6 +94,7 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
+
 //
 //  int getCrossCount(double width) {
 //    final result = ((width - 400) ~/ 300) < 1 ? 1 : ((width - 400) ~/ 300);
@@ -250,9 +250,9 @@ class _HomePageState extends State<HomePage> {
           itemCount: showDataList.length,
           padding: EdgeInsets.all(0.0),
           itemBuilder: (ctx, index) {
-            return GestureDetector(
-              child: ArticleItem(bean: showDataList[index]),
-              onTap: () {
+            return ArticleItem(
+              bean: showDataList[index],
+              onPressed: () {
                 final name = showDataList[index].articleName;
                 final result = Uri.encodeFull(name);
                 Navigator.of(context).pushNamed(articlePage + '/$result',

@@ -5,8 +5,6 @@ import '../widgets/web_bar.dart';
 import '../config/url_launcher.dart';
 import 'package:flutter/material.dart';
 import '../widgets/common_layout.dart';
-import '../widgets/hover_tap_image.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 
 class AboutPage extends StatelessWidget {
   @override
@@ -48,20 +46,26 @@ class AboutPage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            GestureDetector(
-                              onTap: () =>
+                            FlatButton(
+                              child: Image.asset(
+                                'assets/img/github.png',
+                                width: 30,
+                                height: 30,
+                              ),
+                              onPressed: () =>
                                   launchURL('https://github.com/asjqkkkk'),
-                              child: const HoverTapImage(
-                                  image: "assets/img/github.png"),
                             ),
                             const SizedBox(
                               width: 10,
                             ),
-                            GestureDetector(
-                              onTap: () => launchURL(
-                                  'https://steamcommunity.com/id/JiangHun/'),
-                              child: const HoverTapImage(
-                                  image: 'assets/img/steam.png'),
+                            FlatButton(
+                              child: Image.asset(
+                                'assets/img/steam.png',
+                                width: 30,
+                                height: 30,
+                              ),
+                              onPressed: () =>
+                                  launchURL('https://steamcommunity.com/id/JiangHun/'),
                             ),
                           ],
                         ),
@@ -78,14 +82,18 @@ class AboutPage extends StatelessWidget {
                             decoration: BoxDecoration(
                                 borderRadius: const BorderRadius.all(
                                     Radius.circular(20))),
-                            child: Container(
-                              alignment: Alignment.center,
-                              child: FadeInImage.assetNetwork(
-                                placeholder: 'assets/img/loading.gif',
-                                placeholderScale: 0.2,
-                                image: 'https://api.dujin.org/bing/1366.php',
-                                fit: BoxFit.contain,
+                            child: FlatButton(
+                              child: Container(
+                                alignment: Alignment.center,
+                                child: FadeInImage.assetNetwork(
+                                  placeholder: 'assets/img/loading.gif',
+                                  placeholderScale: 0.2,
+                                  image: 'https://api.dujin.org/bing/1366.php',
+                                  fit: BoxFit.contain,
+                                ),
                               ),
+                              hoverColor: Colors.transparent,
+                              onPressed: () =>  launchURL('https://api.dujin.org/bing/1366.php'),
                             ))
                       ],
                     ),

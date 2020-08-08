@@ -155,5 +155,45 @@ The frantic pacing--scene changes every 11seconds on average--often leaves kids 
 
 <youtube id="mu-eaxlA5jo">
 
+
+## 16.Philippines
+
+Battered, soaked and flooded; the Philippines is being hit by its 2nd typhoon in a week.
+
+- Battered: repeatedly continuously hit
+- soaked: completely wet
+- flooded: there's so much rain that a river or a lake overflows and goes into the streets and into our homes and into our fields
+
+<youtube id="pCskVAIn7qY">
+
+
+## 17.Search and rescue dogs
+
+A few years ago, they were thought to be useless past their prime, not now!
+
+- past their prime: the best year in their life was gone (different from => in sb's prime)
+
+
+<youtube id="bXyc26YaSvc">
+
+## 18.The grandmother
+
+If you are breathing, it is not too late. Get up and get going.
+
+<youtube id="9h13zghnrGM">
+
+## 19.A grandfather who survived a terrible car accident
+
+A 67 year old grandpa, has been found alive after been stuck for 6 days at the bottom of a ravine
+
+- been: say `[ben]`
+- stuck: in a place and you can't leave
+
+<youtube id="Eoy5UNd-Ngc">
+
+## 20.An accident involved an ultralight plane and a Ferris wheel
+
+
+
 waiting...
 

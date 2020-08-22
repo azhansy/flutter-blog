@@ -57,7 +57,7 @@ class _WebBarState extends State<WebBar> {
               children: <Widget>[
                 FlutterLogo(
                   size: getScaleSizeByHeight(height, 75.0),
-                  colors: Colors.blueGrey,
+                  textColor: Colors.blueGrey,
                 ),
                 const SizedBox(
                   width: 30.0,

@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
     final int curHour = DateTime.now().hour;
     return MaterialApp(
       title: '老晨子的flutter blog',
+      navigatorKey: Modular.navigatorKey,
       theme: ThemeData(
         brightness:
             (curHour > 18 || curHour < 7) ? Brightness.dark : Brightness.light,

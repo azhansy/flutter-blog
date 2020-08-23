@@ -46,8 +46,8 @@ class AboutPage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            FlatButton(
-                              child: Image.asset(
+                            IconButton(
+                              icon: Image.asset(
                                 'assets/img/github.png',
                                 width: 30,
                                 height: 30,
@@ -55,11 +55,8 @@ class AboutPage extends StatelessWidget {
                               onPressed: () =>
                                   launchURL('https://github.com/asjqkkkk'),
                             ),
-                            const SizedBox(
-                              width: 10,
-                            ),
-                            FlatButton(
-                              child: Image.asset(
+                            IconButton(
+                              icon: Image.asset(
                                 'assets/img/steam.png',
                                 width: 30,
                                 height: 30,

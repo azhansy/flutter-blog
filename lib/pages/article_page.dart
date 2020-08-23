@@ -265,7 +265,7 @@ class _ArticlePageState extends State<ArticlePage> {
       styleConfig: StyleConfig(
           pConfig: PConfig(
               onLinkTap: (url) => launchURL(url),
-              selectable: false,
+              selectable: true,
               custom: (element) {
                 if(element.tag == 'youtube'){
                   final youtubeId = element.attributes['id'];
@@ -319,15 +319,14 @@ class _ArticlePageState extends State<ArticlePage> {
                                 )),
                                 color: Color(0xff007FFF)),
                             width: 100,
-                            height: 30,
-                            child: Center(
-                              child: Material(
-                                color: Colors.transparent,
-                                child: Text(
-                                  '复制成功',
-                                  style: TextStyle(
-                                      fontSize: 10, color: Colors.white),
-                                ),
+                            padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                            child: Material(
+                              color: Colors.transparent,
+                              child: Text(
+                                '复制成功',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 10, color: Colors.white),
                               ),
                             ),
                           ),

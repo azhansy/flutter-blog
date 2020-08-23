@@ -193,7 +193,74 @@ A 67 year old grandpa, has been found alive after been stuck for 6 days at the b
 
 ## 20.An accident involved an ultralight plane and a Ferris wheel
 
+Saturday, an ultralight plane crashed into a Ferris wheel at a rural festival in Australia, yet somehow no one on the amusement ride nor the plane was hurt.
 
+- somehow: can be replaced by **magically**
+
+
+<youtube id="nlq9fXZqmyw">
+
+
+## 21.Heidi  --  an opossum
+
+Heidi won the world over with her forever cute but slightly confused look.
+
+- won the world over with: 
+- look: can be replaced by **expression** or **appearance**
+- confused look: read it quickly as `confuse look`
+
+
+<youtube id="DcGYI0a_m6E">
+
+
+## 22.The Dead Sea Scrolls
+
+The project to put them online is excepted to be completed by 2016
+
+<youtube id="eqb3Emifihg">
+
+## 23.Cheating on the SAT college entrance exam
+
+An alleged SAT cheating scandal has been uncovered at a prestigious Long Island high school. This college student is accused of taking the college entrance exam for at least 6 students.
+
+- uncovered at a: uncovere**d**-**a t**-**a**
+- student is: stude**n**~~t~~-**i**s
+- accused of: accuse**d**-**o**f
+- taking the: taking `[nuh]`
+
+<youtube id="lPTvrSNOtrg">
+
+## 24.World Series baseball championship in America
+
+St. Louis takes the World Series opener on a cool night. It was 49 degrees at the start of the game.
+
+<youtube id="A9pggqCpy8U">
+
+## 25.Devastating earthquake in Turkey
+
+They searched for the missing throughout the night under generator-powered flood lights as family members waited by the mounds of debris some in tears.
+
+- throughout the: throughou**t**-~~th~~e
+- the debris: means the broken buildings
+- debris: debri~~s~~
+
+<youtube id="VJ6Q0_Jyp-s">
+
+## 26.Hanging yoga
+
+It's the kind of thing you look forward to instead of, you know, some workouts you dread and you think of it as just work and this is just fun! 
+
+
+<youtube id="QPo89Wl5NzA">
+
+## 27.Halloween costumes for children
+
+Superhero costumes, as usual, are big this year--especially from recent movies like Thor and the Green Lantern.
+
+- big: means **popular** here
+- recent movies: recen~~t~~ movies
+
+<youtube id="gAHb70doR4Q">
 
 waiting...
 

@@ -262,5 +262,55 @@ Superhero costumes, as usual, are big this year--especially from recent movies l
 
 <youtube id="gAHb70doR4Q">
 
+## 28.A snowstorm
+
+It's a pain, 'cuz my fridge is...I dumped it today, and the food's gone.
+
+- dumped it today: dumpe**d**-**it**-**t**oday
+
+<youtube id="5-Yg9UMVFig">
+
+## 29.A Polish pilot
+
+
+He says he was simply going by the book when it comes to landing without gear, and that he and his fellow pilots train for these types of incidents.
+
+- simply: can be replaced by **just**
+- he says he: he say**s**-~~h~~e
+- was simply: wa**s**-**s**imply
+- and that: `en-nat`
+- train for: train `fer`
+- and his: an**d**-~~h~~is
+
+<youtube id="467_pBNGF2o">
+
+## 30.A new kind of broccoli!
+
+It is the vegetable some love to hate! But now a new breed of broccoli--super broccoli, developed in Britain may protect against heart disease--even some kinds of cancer.
+
+- love to hate: means really hate something
+
+<youtube id="j1AEy9jpSY8">
+
+## 31.OWS
+
+Mayor Sam Adams ordered that the camp be shut down Saturday citing unhealthy conditions and the attraction of drug dealers and thieves.
+
+- ordered that the: order**ed**-**that**-**th**e
+
+
+<youtube id="hpV_QJYIPqs">
+
+## 32.Fukishima and the nuclear power plant's problems
+
+
+A preliminary government report predicts it'll take 30 years or more to safely decommission the facility and it could be decades before nearby residents who were forced to flee can return to the area.
+
+- government: governmen~~t~~
+- preliminary: **pre** -> `pre`
+
+<youtube id="cGE1UGXH0w8">
+
+
 waiting...
 

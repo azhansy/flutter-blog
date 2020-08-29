@@ -55,8 +55,9 @@ class _ArticlePageState extends State<ArticlePage> {
       } else {
         markdownData = content;
       }
-      Future.delayed(Duration(milliseconds: 300), () {
-        setState(() {});
+      refresh();
+      WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+        controller.jumpTo(index: 0);
       });
     });
   }

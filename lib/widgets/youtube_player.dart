@@ -42,7 +42,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: 300,
       child: YoutubePlayerIFrame(
         controller: _controller,
         aspectRatio: 16 / 9,

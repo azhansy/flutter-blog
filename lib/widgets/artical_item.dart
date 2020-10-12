@@ -36,13 +36,13 @@ class ArticleItem extends StatelessWidget {
                   width: cardWidth,
                   height: cardHeight,
                   alignment: Alignment.center,
+                  padding: const EdgeInsets.all(2),
                   margin: const EdgeInsets.all(2),
                   decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.all(Radius.circular(30.0)),
+                    borderRadius: const BorderRadius.all(Radius.circular(20.0)),
                     color: Colors
                         .primaries[Random().nextInt(Colors.primaries.length)],
                   ),
-                  child: Container(),
                 ),
                 Container(
                   alignment: Alignment.center,
@@ -50,8 +50,6 @@ class ArticleItem extends StatelessWidget {
                   height: cardHeight,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(20.0)),
-                    color: Colors
-                        .primaries[Random().nextInt(Colors.primaries.length)],
                     image: bean.imageAddress.isEmpty
                         ? null
                         : DecorationImage(

@@ -38,3 +38,4 @@ lib/generated_plugin_registrant.dart
 pubspec.lock
 .gradle/
 config/tencent_config.json
+.fvm

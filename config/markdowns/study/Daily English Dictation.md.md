@@ -49,7 +49,7 @@ Don't ever let somebody tell you, you can't do something
 I have come here to chew bubblegum and kick ass, and I'm all out of bubblegum
 
 - I'm: always say `[ahm]`
-- out off: always say `[outta]`
+- out of: always say `[outta]`
 
 <youtube id="Fp11y7wUh2k">
 
@@ -310,6 +310,180 @@ A preliminary government report predicts it'll take 30 years or more to safely d
 - preliminary: **pre** -> `pre`
 
 <youtube id="cGE1UGXH0w8">
+
+
+## 33.Diamond engagement ring
+
+I was lifting, you know, chairs out of the way, broken glass uh, other sanitary items I don't want to get into, but uh, it was uh, horrific to say the least.
+
+- sanitary items: means "children's 、 baby's diapers, used diapers"、"toilet paper that has been used"、"something gross、disgusting"
+- want to: usually read as `wanna`
+
+
+<youtube id="k0QeHKnvjR0">
+
+## 34.Steering problems in some Toyota cars
+
+Toyota is recalling more than half a million vehicles for problems that could make them difficult to steer.
+
+
+<youtube id="axyKJZUiq0o">
+
+## 35.Penguins
+
+It's great. It's um, been a little bit nerve-wracking, um, and it's been a long process to get here...
+
+- a little bit: sometimes it means "**very**"
+- process: pr`ah`cess
+
+
+<youtube id="fSxV-RXYpRY">
+
+## 36.A father and his son
+
+When the family left Vietnam by boat, bound for Thailand, but the boat was intercepted by pirates...after years of trying, the father located his son in Thailand^^
+
+- when the: read as ->  when `nuh`
+
+<youtube id="88r9-PmrKIQ">
+
+## 37.A VERY dirty, icky, gross story
+
+A gooey mess snarls traffic along the busy Pennsylvania Turnpike. A leaking valve on a tanker spread driveway sealant across a 40-mile stretch of the eastbound side.
+
+- mess snarls: me**ss**-**s**narls
+- along the: along `[nuh]`
+- leaking valve: means not shut the valve completely
+- spread driveway: sprea**d**-**d**riveway
+- eastbound: eas~~t~~bound
+
+<youtube id="IcPOyTbuec8">
+
+## 38.The world's LONGEST concert
+
+The music is being played at a church in Germany, and, well, it really lives up to its name. Since it started, there have been just 11 chord changes, and the next one isn't scheduled until July 2012. 
+
+- chord change: chor~~d~~ change
+
+<youtube id="6939MB_Q0Ng">
+
+## 39.Rabbits
+
+Dozens of white rabbits were apparently dumped along the side of the road Sunday night. More than 60 bunnies were scattered on the shoulder.
+
+- Dozens of: means 12、24、36...
+- side of the: side o~~f~~ the
+- scattered: means **spread out**
+
+<youtube id="9gJYAwR6kI0">
+
+## 40.A very good quotation from a person
+
+There's a wonderful line I came across: If you've always done...or, "If you always do what you've always done, you'll always get what you've always got." It's a brilliant line.
+
+- line: means **quotation**
+- came across: means **found**
+
+<youtube id="ZtoSD-rvJxE">
+
+## 41.Some people who are paying Christmas shopping bills for strangers
+
+Her story has inspired others from Montana to Indiana to pay off the bills of complete strangers in these days before Christmas. Holiday shoppers who've heard about the layaway Santas say the sweeping acts of kindness have restored their faith in people.
+
+- in these: in `[kness]`
+
+<youtube id="FX7AxamVJUU">
+
+## 42.The last verse from a poem about Santa Claus 
+
+He sprang to his sleigh, to his team gave a whistle!
+
+And away they all flew like the down of a thistle.
+
+But I heard him exclaim as he drove out of sight,
+
+"Happy Christmas to all, and to all a good night!"
+
+
+<youtube id="TNXIjt4tx6M">
+
+## 43.The situation comedy called Seinfeld
+
+Elaine:   Hey, George. You know, my friend goes to a psychic.
+
+George:  Really?
+
+Elaine:   Uh-huh. We should go sometime.
+
+George:  I'd love to go. Make an appointment!
+
+- psychic: means **fortune-teller**, such as *palm reader*、*tarot card reader*
+- appointment: appoin~~t~~ment
+
+<youtube id="8XjiyaVi1Mc">
+
+## 44.The situation comedy called Everybody Loves Raymond
+
+Raymond: Dad, I beat you. Don't you remember the Raymond Spinball?
+
+Frank: Ray, I learned to play in Korea. From Koreans. Do you think some
+punk kid's gonna actually beat me?
+
+Raymond: No, dad, you were trying to win. You were sweating and panting.
+
+Frank: I'm a damn fine actor^^
+
+- beat you: `[be chew]`
+- Don't you: `[don chew]`
+- learned to: learne**d**-`[d]`
+- punk kid: pun**k**-**k**id
+- trying、sweating and panting: ...**ing** read as `[en]`
+
+<youtube id="QT8ePIi7kc4">
+
+## 45.The situation comedy Seinfeld
+
+Jerry: Hey, is it cold out?
+
+- is it: `[is-i]`
+
+<youtube id="S3_svYFfTKU">
+
+## 46.French history
+
+For more than 300 years, the power of the French king was absolute. This meant that he had the power to do anything.
+
+<youtube id="PzCGT6F1V1w">
+
+## 47.Pets
+
+What people will do these days for their pets. A wash and a blow-dry--that goes without saying. But the demanding dog now wants a limo along with other creature comforts at a pet hotel and day spa.
+
+- demanding: means **strict** or **hard to satisfy** ...  ,such as **demanding parents**、**demanding teather**
+- limo: super expensive car
+- comforts: means **luxuries**
+
+<youtube id="SmYEIxcCLRQ">
+
+## 48.Murder at a royal estate in Great Britain.
+
+Buckingham Palace officials are staying mum about the murder case, and police are keeping many details confidential as they try to identify the victim and figure out exactly what happened to her.
+
+ - Buckingham Palace: this is where the queen of England lives
+ - happened to her: `[happen tour]`
+
+<youtube id="QBKHDJ_oHOY">
+
+## 49.Something that happened in London
+
+1863  
+"All aboard, but mind the gap" as the world's first underground passenger railway opens in London.
+
+- All aboard: means **get on the train**、**get on the plane**、**get on the boat**, in this case it means **get on the subway**
+- 
+
+
+<youtube id="gfyTKRI10TA">
 
 
 waiting...

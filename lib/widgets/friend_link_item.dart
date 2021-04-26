@@ -61,8 +61,9 @@ class FriendLinkItem extends StatelessWidget {
                                       child: Text(bean.linkDescription[index],
                                           style: TextStyle(
                                             fontFamily: 'huawen_kt',
-                                            fontSize: (Random().nextInt(10) + 15)
-                                                .toDouble(),
+                                            fontSize:
+                                                (Random().nextInt(10) + 15)
+                                                    .toDouble(),
                                             color: Colors.primaries[Random()
                                                 .nextInt(
                                                     Colors.primaries.length)],

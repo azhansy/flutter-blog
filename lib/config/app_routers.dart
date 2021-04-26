@@ -9,12 +9,12 @@ class AppModule extends MainModule {
 
   @override
   List<ModularRouter> get routers => [
-    ModularRouter(homePage, child: (_, args) => HomePage()),
-    ModularRouter(tagPage, child: (_, args) => TagPage()),
-    ModularRouter(archivePage, child: (_, args) => ArchivePage()),
-    ModularRouter(linkPage, child: (_, args) => FriendLinkPage()),
-    ModularRouter(aboutPage, child: (_, args) => AboutPage()),
-    ModularRouter("$articlePage/:name",
+        ModularRouter(homePage, child: (_, args) => HomePage()),
+        ModularRouter(tagPage, child: (_, args) => TagPage()),
+        ModularRouter(archivePage, child: (_, args) => ArchivePage()),
+        ModularRouter(linkPage, child: (_, args) => FriendLinkPage()),
+        ModularRouter(aboutPage, child: (_, args) => AboutPage()),
+        ModularRouter("$articlePage/:name",
             child: (_, args) => ArticlePage(
                   name: args.params['name'],
                   articleData: args.data,

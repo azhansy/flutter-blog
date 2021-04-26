@@ -61,8 +61,8 @@ class AboutPage extends StatelessWidget {
                                 width: 30,
                                 height: 30,
                               ),
-                              onPressed: () =>
-                                  launchURL('https://steamcommunity.com/id/JiangHun/'),
+                              onPressed: () => launchURL(
+                                  'https://steamcommunity.com/id/JiangHun/'),
                             ),
                           ],
                         ),
@@ -90,7 +90,8 @@ class AboutPage extends StatelessWidget {
                                 ),
                               ),
                               hoverColor: Colors.transparent,
-                              onPressed: () =>  launchURL('https://api.dujin.org/bing/1366.php'),
+                              onPressed: () => launchURL(
+                                  'https://api.dujin.org/bing/1366.php'),
                             ))
                       ],
                     ),

@@ -8,7 +8,6 @@ class PlatformDetector {
 
   static bool get isAndroid => currentType == PlatformType.Android;
 
-
   static bool get isWebMobile =>
       currentType == PlatformType.WebAndroid ||
       currentType == PlatformType.WebIos;
@@ -21,4 +20,16 @@ class PlatformDetector {
   }
 }
 
-enum PlatformType { Web, Mobile, Android, IOS, WebAndroid, WebIos, Fuchsia, Linux, MacOS, Windows, Desktop }
+enum PlatformType {
+  Web,
+  Mobile,
+  Android,
+  IOS,
+  WebAndroid,
+  WebIos,
+  Fuchsia,
+  Linux,
+  MacOS,
+  Windows,
+  Desktop
+}

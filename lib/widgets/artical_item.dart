@@ -9,7 +9,8 @@ class ArticleItem extends StatelessWidget {
   final ArticleItemBean bean;
   final VoidCallback onPressed;
 
-  const ArticleItem({Key key, @required this.bean, this.onPressed}) : super(key: key);
+  const ArticleItem({Key key, @required this.bean, this.onPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

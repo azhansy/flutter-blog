@@ -268,7 +268,7 @@ class _ArticlePageState extends State<ArticlePage> {
               onLinkTap: (url) => launchURL(url),
               selectable: true,
               custom: (element) {
-                if(element.tag == 'youtube'){
+                if (element.tag == 'youtube') {
                   final youtubeId = element.attributes['id'];
                   return YoutubePlayer(youtubeId: youtubeId);
                 }

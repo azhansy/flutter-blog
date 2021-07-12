@@ -13,7 +13,15 @@ import '../widgets/common_layout.dart';
 import '../logic/article_page_logic.dart';
 import 'package:markdown_widget/markdown_widget.dart';
 
+class ArticleArguments{
+  final ArticleData articleData;
+  final String name;
+
+  ArticleArguments(this.articleData, this.name);
+}
 class ArticlePage extends StatefulWidget {
+  static const String routeName = '/articlePage';
+
   final ArticleData articleData;
   final String name;
 

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_blog/utils/navigator_util.dart';
+import 'package:get/get.dart';
 import '../pages/article_page.dart';
 import '../config/base_config.dart';
 import '../json/article_item_bean.dart';
@@ -7,6 +9,8 @@ import '../widgets/web_bar.dart';
 import '../widgets/common_layout.dart';
 
 class ArchivePage extends StatefulWidget {
+  static const String routeName = '/archivePage';
+
   @override
   _ArchivePageState createState() => _ArchivePageState();
 }
@@ -34,7 +38,7 @@ class _ArchivePageState extends State<ArchivePage> {
   Widget build(BuildContext context) {
     final isNotMobile = !PlatformType().isMobile();
     final List<ArchiveItemBean> transBeans =
-        ModalRoute.of(context).settings.arguments;
+        Get.arguments;
     if (!hasInitialed) {
       initialData(transBeans);
     }
@@ -154,8 +158,8 @@ class _ArchivePageState extends State<ArchivePage> {
       BuildContext context, List<ArticleItemBean> beans, int index) {
     final name = beans[index].articleName;
     final result = Uri.encodeFull(name);
-    Navigator.of(context).pushNamed(articlePage + '/$result',
-        arguments: ArticleData(index, beans));
+    NavigatorUtil.pushName(ArchivePage.routeName,arguments: ArticleData(index, beans));
+
   }
 
   String getDate(DateTime time) {

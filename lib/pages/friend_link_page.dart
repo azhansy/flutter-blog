@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blog/json/friend_link_bean.dart';
 import 'package:flutter_blog/widgets/web_bar.dart';
-import '../widgets/friend_link_item.dart';
+
 import '../widgets/common_layout.dart';
+import '../widgets/friend_link_item.dart';
 
 class FriendLinkPage extends StatelessWidget {
+
+  static const String routeName = '/friendLinkPage';
+
   final beans = FriendLinkBean().beans;
 
   @override

@@ -1,5 +1,3 @@
-import 'package:flutter_blog/config/base_config.dart';
-
 import 'link_item_bean.dart';
 
 class FriendLinkBean {
@@ -22,26 +20,26 @@ class FriendLinkBean {
         linkDescription: ["大佬", "我不要你觉得", "东野圭吾爱好者", "一开始，我是拒绝的"],
         linkAvatar:
             "https://avatars3.githubusercontent.com/u/9384365?s=460&v=4"),
-    LinkItemBean(
-        linkName: "senfangblog",
-        linkAddress: "https://senfangblog.cn/",
-        linkDescription: ["和平主义者", "后端开发", "摸鱼宗师", "王者手速"],
-        linkAvatar: "$baseUrl/senfangblog.jpeg"),
+    // LinkItemBean(
+    //     linkName: "senfangblog",
+    //     linkAddress: "https://senfangblog.cn/",
+    //     linkDescription: ["和平主义者", "后端开发", "摸鱼宗师", "王者手速"],
+    //     linkAvatar: "$baseUrl/senfangblog.jpeg"),
     LinkItemBean(
         linkName: "EVILLT的博客",
         linkAddress: "https://evila.me/#/",
         linkDescription: ["哲学大师", "有猫", "前端开发", "Github社区爱好者"],
         linkAvatar:
             "https://avatars2.githubusercontent.com/u/19513289?s=460&v=4"),
-    LinkItemBean(
-        linkName: "老涛子的博客",
-        linkAddress: "http://www.sporoka.com/",
-        linkDescription: [
-          "有猫",
-          "前端开发",
-          "新晋渣男",
-          "狮子狗",
-        ],
-        linkAvatar: "$baseUrl/old_tao.jpg"),
+    // LinkItemBean(
+    //     linkName: "老涛子的博客",
+    //     linkAddress: "http://www.sporoka.com/",
+    //     linkDescription: [
+    //       "有猫",
+    //       "前端开发",
+    //       "新晋渣男",
+    //       "狮子狗",
+    //     ],
+    //     linkAvatar: "$baseUrl/old_tao.jpg"),
   ];
 }

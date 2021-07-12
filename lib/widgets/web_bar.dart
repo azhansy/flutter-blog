@@ -3,12 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blog/config/base_config.dart';
 import 'package:flutter_blog/config/full_screen_dialog_util.dart';
 import 'package:flutter_blog/json/article_json_bean.dart';
+import 'package:flutter_blog/pages/all_pages.dart';
+import 'package:flutter_blog/utils/navigator_util.dart';
 import 'package:flutter_blog/widgets/search_widget.dart';
 import 'package:flutter_blog/widgets/top_show_widget.dart';
-export '../config/platform_type.dart';
-import '../config/platform_type.dart';
 
+import '../config/platform_type.dart';
 import 'bar_button.dart';
+
+export '../config/platform_type.dart';
 
 class WebBar extends StatefulWidget {
   final PageType pageType;
@@ -57,7 +60,7 @@ class _WebBarState extends State<WebBar> {
               children: <Widget>[
                 FlutterLogo(
                   size: getScaleSizeByHeight(height, 75.0),
-                  colors: Colors.blueGrey,
+                  // colors: Colors.blueGrey,
                 ),
                 const SizedBox(
                   width: 30.0,
@@ -108,12 +111,7 @@ class _WebBarState extends State<WebBar> {
           onPressed: () {
             print(ModalRoute.of(context).isFirst);
             if (pageType == PageType.home) return;
-            if (ModalRoute.of(context).isFirst) {
-              Navigator.of(context)
-                  .pushNamedAndRemoveUntil(homePage, (route) => false);
-            } else {
-              Navigator.of(context).popUntil((route) => route.isFirst);
-            }
+            NavigatorUtil.until(HomePage.routeName);
           },
           isChecked: pageType == PageType.home,
         ),
@@ -130,7 +128,7 @@ class _WebBarState extends State<WebBar> {
           ),
           onPressed: () {
             if (pageType == PageType.tag) return;
-            pushAndRemove(context, tagPage);
+            NavigatorUtil.pushName(TagPage.routeName);
           },
           isChecked: pageType == PageType.tag,
         ),
@@ -147,7 +145,7 @@ class _WebBarState extends State<WebBar> {
           ),
           onPressed: () {
             if (pageType == PageType.archive) return;
-            pushAndRemove(context, archivePage);
+            pushAndRemove(context, ArchivePage.routeName);
           },
           isChecked: pageType == PageType.archive,
         ),
@@ -164,7 +162,7 @@ class _WebBarState extends State<WebBar> {
           ),
           onPressed: () {
             if (pageType == PageType.link) return;
-            pushAndRemove(context, linkPage);
+            pushAndRemove(context, FriendLinkPage.routeName);
           },
           isChecked: pageType == PageType.link,
         ),
@@ -181,7 +179,7 @@ class _WebBarState extends State<WebBar> {
           ),
           onPressed: () {
             if (pageType == PageType.about) return;
-            pushAndRemove(context, aboutPage);
+            pushAndRemove(context, AboutPage.routeName);
           },
           isChecked: pageType == PageType.about,
         ),
@@ -218,10 +216,11 @@ class _WebBarState extends State<WebBar> {
 
   void pushAndRemove(BuildContext context, String routeName,
       {Object argument}) {
+    debugPrint('widget.pageType=${widget.pageType}');
     if (widget.pageType == PageType.home) {
-      Navigator.pushNamed(context, routeName);
+      NavigatorUtil.pushName(routeName, arguments: argument);
     } else {
-      Navigator.pushReplacementNamed(context, routeName, arguments: argument);
+      NavigatorUtil.pushReplacementNamed(routeName, arguments: argument);
     }
   }
 

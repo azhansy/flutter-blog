@@ -1,17 +1,19 @@
-import '../pages/article_page.dart';
-
-import '../config/base_config.dart';
-import '../config/platform_type.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../json/article_json_bean.dart';
+import 'package:flutter_blog/utils/navigator_util.dart';
+
+import '../config/platform_type.dart';
 import '../json/article_item_bean.dart';
+import '../json/article_json_bean.dart';
 import '../logic/home_page_logic.dart';
+import '../pages/article_page.dart';
 import '../widgets/artical_item.dart';
 import '../widgets/common_layout.dart';
 import '../widgets/search_delegate_widget.dart';
 
 class HomePage extends StatefulWidget {
+  static const String routeName = '/homePage';
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -83,9 +85,11 @@ class _HomePageState extends State<HomePage> {
                           onTap: () {
                             final name = showDataList[index].articleName;
                             final result = Uri.encodeFull(name);
-                            Navigator.of(context).pushNamed(
-                                articlePage + '/$result',
-                                arguments: ArticleData(index, showDataList));
+                            NavigatorUtil.pushName(
+                              ArticlePage.routeName,
+                              arguments: ArticleArguments(
+                                  ArticleData(index, showDataList), result),
+                            );
                           },
                         );
                       }),
@@ -95,6 +99,7 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
+
 //
 //  int getCrossCount(double width) {
 //    final result = ((width - 400) ~/ 300) < 1 ? 1 : ((width - 400) ~/ 300);
@@ -255,8 +260,9 @@ class _HomePageState extends State<HomePage> {
               onTap: () {
                 final name = showDataList[index].articleName;
                 final result = Uri.encodeFull(name);
-                Navigator.of(context).pushNamed(articlePage + '/$result',
-                    arguments: ArticleData(index, showDataList));
+                NavigatorUtil.pushName(ArticlePage.routeName,
+                  arguments: ArticleArguments(
+                      ArticleData(index, showDataList), result),);
               },
             );
           },

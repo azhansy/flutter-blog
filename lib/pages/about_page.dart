@@ -1,14 +1,16 @@
-import 'dart:ui';
 import 'dart:math';
+import 'dart:ui';
 
-import '../widgets/web_bar.dart';
-import '../config/url_launcher.dart';
 import 'package:flutter/material.dart';
+
+import '../config/url_launcher.dart';
 import '../widgets/common_layout.dart';
 import '../widgets/hover_tap_image.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import '../widgets/web_bar.dart';
 
 class AboutPage extends StatelessWidget {
+  static const String routeName = '/aboutPage';
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -83,7 +85,8 @@ class AboutPage extends StatelessWidget {
                               child: FadeInImage.assetNetwork(
                                 placeholder: 'assets/img/loading.gif',
                                 placeholderScale: 0.2,
-                                image: 'https://api.dujin.org/bing/1366.php',
+                                image:
+                                    'http://images.shangtupian.com/1905/1-1Z51G54U4-51.jpg',
                                 fit: BoxFit.contain,
                               ),
                             ))

@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_blog/pages/all_pages.dart';
+import 'package:flutter_blog/utils/navigator_util.dart';
 import '../config/base_config.dart';
 import '../json/archive_item_bean.dart';
 import '../widgets/common_layout.dart';
@@ -7,6 +9,8 @@ import '../widgets/web_bar.dart';
 import 'dart:math';
 
 class TagPage extends StatefulWidget {
+  static const String routeName = '/tagPage';
+
   @override
   _TagPageState createState() => _TagPageState();
 }
@@ -25,7 +29,9 @@ class _TagPageState extends State<TagPage> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery
+        .of(context)
+        .size;
     final width = size.width;
     final height = size.height;
     final isNotMobile = !PlatformType().isMobile();
@@ -39,34 +45,34 @@ class _TagPageState extends State<TagPage> {
         child: Card(
           child: beans.isEmpty
               ? const Center(
-                  child: CircularProgressIndicator(),
-                )
+            child: CircularProgressIndicator(),
+          )
               : Container(
-                  alignment: Alignment.center,
-                  height: isNotMobile ? height / 2 : height,
-                  child: SingleChildScrollView(
-                    child: Wrap(
-                      children: List.generate(beans.length, (index) {
-                        final bean = beans[index];
-                        return FlatButton(
-                          onPressed: () {
-                            Navigator.pushReplacementNamed(context, archivePage,
-                                arguments: [bean]);
-                          },
-                          child: Text(
-                            bean.tag,
-                            style: TextStyle(
-                              fontSize: (Random().nextInt(40) + 20).toDouble(),
-                              fontFamily: 'huawen_kt',
-                              color: Colors.primaries[
-                                  Random().nextInt(Colors.primaries.length)],
-                            ),
-                          ),
-                        );
-                      }),
+            alignment: Alignment.center,
+            height: isNotMobile ? height / 2 : height,
+            child: SingleChildScrollView(
+              child: Wrap(
+                children: List.generate(beans.length, (index) {
+                  final bean = beans[index];
+                  return FlatButton(
+                    onPressed: () {
+                      NavigatorUtil.pushName(
+                          ArchivePage.routeName, arguments: [bean]);
+                    },
+                    child: Text(
+                      bean.tag,
+                      style: TextStyle(
+                        fontSize: (Random().nextInt(40) + 20).toDouble(),
+                        fontFamily: 'huawen_kt',
+                        color: Colors.primaries[
+                        Random().nextInt(Colors.primaries.length)],
+                      ),
                     ),
-                  ),
-                ),
+                  );
+                }),
+              ),
+            ),
+          ),
         ),
       ),
     );

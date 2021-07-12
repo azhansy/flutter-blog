@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blog/pages/article_page.dart';
-import '../config/base_config.dart';
+import 'package:flutter_blog/utils/navigator_util.dart';
+
 import '../json/article_item_bean.dart';
 import '../logic/query_logic.dart';
 
@@ -68,18 +69,16 @@ class SearchDelegateWidget extends SearchDelegate<String> {
                         onTap: () {
                           final name = showDataList[index].title;
                           final result = Uri.encodeFull(name);
-                          Navigator.of(context).pushNamed(
-                            articlePage + '/$result',
-                            arguments: ArticleData(
-                              index,
-                              List.generate(
-                                showDataList.length,
-                                (index) => ArticleItemBean(
-                                  articleName: showDataList[index].title,
+                          NavigatorUtil.pushName(ArticlePage.routeName,
+                              arguments: ArticleArguments(ArticleData(
+                                index,
+                                List.generate(
+                                  showDataList.length,
+                                      (index) => ArticleItemBean(
+                                    articleName: showDataList[index].title,
+                                  ),
                                 ),
-                              ),
-                            ),
-                          );
+                              ), result));
                         },
                       ),
                       ListTile(

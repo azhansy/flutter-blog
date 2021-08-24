@@ -38,7 +38,7 @@ dependencies:
   #路由
 #  flutter_modular: ^3.3.1
   url_launcher: ^5.4.2
-  get: ^4.1.4
+  get: ^4.3.8
 
 
 
@@ -47,8 +47,8 @@ dependencies:
   cupertino_icons: ^1.0.3
 
 dependency_overrides:
-  markdown: ^3.0.0
-  args: ^1.0.0
+  markdown: ^4.0.0
+  args: ^2.2.0
 
 dev_dependencies:
   flutter_test:
